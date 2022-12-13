@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  pokerth-server:
+    image: baptistecdr/pokerth-server
+    container_name: pokerth-server
+    ports:
+      - "7234:7234"
+    volumes:
+      - ./config.xml:/pokerth/.pokerth/config.xml
