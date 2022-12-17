@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   pokerth-server:
-    image: baptistecdr/pokerth-server
+    image: baptistecdr/pokerth-server:1.1.2-0
     container_name: pokerth-server
     ports:
       - "7234:7234"
