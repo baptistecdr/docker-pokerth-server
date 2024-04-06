@@ -1,17 +1,5 @@
 {
   "extends": [
-    "config:base"
-  ],
-  "pinDigests": true,
-  "packageRules": [
-    {
-      "matchUpdateTypes": [
-        "minor",
-        "patch",
-        "digest",
-        "pinDigest"
-      ],
-      "automerge": true
-    }
+    "github>baptistecdr/renovate-config"
   ]
 }
