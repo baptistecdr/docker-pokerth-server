@@ -24,14 +24,15 @@ jobs:
           images: |
             baptistecdr/pokerth-server
             ghcr.io/baptistecdr/pokerth-server
+          flavor: |
+            latest=auto
+            prefix=
+            suffix=
           # generate Docker tags based on the following events/attributes
           tags: |
             type=ref,event=branch
             type=ref,event=pr
-            type=semver,pattern={{version}}
-            type=semver,pattern={{major}}.{{minor}}
-            type=semver,pattern={{major}}
-            type=sha
+            type=ref,event=tag
       - name: Set up QEMU
         uses: docker/setup-qemu-action@29109295f81e9208d7d86ff1c6c12d2833863392 # v3
       - name: Set up Docker Buildx
